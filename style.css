@@ -1,0 +1,73 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+header {
+  height: 5vh;
+  width: 80vh;
+  font-size: 2.5rem;
+  color: #e9ede9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Akaya Kanadaka", cursive;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #19362c;
+  margin: 0;
+}
+
+#app #container {
+  position: relative;
+  font-size: 0;
+  margin: auto;
+  height: 840px;
+  width: 840px;
+  padding: 0;
+  border: none;
+  background-color: #e9ede9;
+  border-radius: 2.5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr) [21];
+  grid-template-rows: repeat(21, 1fr);
+  -ms-grid-columns: (1fr) [21];
+  grid-template-columns: repeat(21, 1fr);
+}
+
+#app #container .grid {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: inline-block;
+}
+
+#app #container .grid:nth-child(even) {
+  background-color: rgba(4, 197, 107, 0.25);
+}
+
+#app #container .snake {
+  background-color: #4e514f !important; /* needed due to checker board from nth-child */
+}
+
+#app #container .food {
+  background-color: #e20044 !important; /* needed due to checker board from nth-child */
+}
