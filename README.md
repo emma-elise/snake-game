@@ -4,3 +4,4 @@ Features to add:
 
 Bugs:
 - Edge of screen detected prematurely (or render speed of the indexed snake head =/= the speed the user sees), sometimes prompted early game over
+- setInterval =/= actual real world time; the game lags more and more the longer the snake is
